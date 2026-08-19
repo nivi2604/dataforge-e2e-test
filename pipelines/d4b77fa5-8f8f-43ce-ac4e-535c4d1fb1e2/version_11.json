@@ -1,0 +1,34 @@
+[
+  {
+    "id": "d9120d82-8c2f-416c-bbe5-ff8289ddc711",
+    "node_type": "extract",
+    "configuration": "{\"data_source_id\": \"76258b9b-86d6-458c-9718-0a68c5b1eef1\"}",
+    "sequence_index": 1,
+    "position_x": 100,
+    "position_y": 100
+  },
+  {
+    "id": "2c2dfc79-17fd-49f5-9225-203c724fed5c",
+    "node_type": "transform",
+    "configuration": "{\"operation\": \"drop_nulls\"}",
+    "sequence_index": 2,
+    "position_x": 100,
+    "position_y": 200
+  },
+  {
+    "id": "3b6e49fc-6039-4a0e-bf90-c763b27b6c1d",
+    "node_type": "data_quality",
+    "configuration": "{\"required_columns\": \"id, name\"}",
+    "sequence_index": 3,
+    "position_x": 100,
+    "position_y": 300
+  },
+  {
+    "id": "a1eaec2b-6354-4ee4-9637-b6a0342967a8",
+    "node_type": "load",
+    "configuration": "{\"data_source_id\": \"45656cb9-e212-4d86-96db-235715b2d0c3\"}",
+    "sequence_index": 4,
+    "position_x": 100,
+    "position_y": 400
+  }
+]
